@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Protest+Guerrilla&display=swap');
 body {
     margin:0;
     padding: 0;
@@ -8,11 +9,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+h2{
+    font-family:"Concert One";
+}
 .container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding:20px;
 }
 
 .card{
@@ -22,24 +29,36 @@ body {
     width: 300px;
     height: 400px;
     display: flex;
-    flex-direction: ;
+    flex-direction:column ;
+    padding:20px;
+    transition: transform 0.3s ease-in-out;
 }
-             
+            
 .card-img{
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
-    margin:0%;
+    margin:0 auto;
 }
-.card-tittle{
+.card:hover{
+    transform: scale(1.05); /*aumenta a escalada imagem em 5%*/
+}
+.card-title{
     font-size: 1.5em;
     margin: 20px 0 0 0 ;
     text-align: center;
 }
-    .depoiment-container{
-        flex: 1em;
-        color: azure;
-        margin:0;
-        text-emphasis: center;
-    }
+.depoiment-container{
+    flex: 1;
+    color: rgb(255,255,255)
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.depoimento{
+    flex:1;
+    color:#555;
+    margin:0;
+    text-align: center;
+}
